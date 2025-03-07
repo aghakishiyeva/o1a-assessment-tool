@@ -1,17 +1,17 @@
 # Core FastAPI dependencies
-fastapi==0.115.11
+fastapi
 uvicorn==0.34.0
 
 # PDF processing
 pdfminer.six==20240706
 
 # NLP and AI-based text processing
-spacy==3.4.2
+spacy
 sentence-transformers==3.4.1
 nltk==3.8.1
 tf-keras==2.15.0
 
 # Other useful utilities
-pydantic==2.10.6
+pydantic
 python-multipart==0.0.20
 requests==2.32.3
