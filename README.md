@@ -67,12 +67,12 @@ Here is the sample video:
 
 ## How to Run
 
-1. Clone the repository - git clone https://github.com/aghakishiyeva/o1a-assessment-tool
-2. Navigate to the directory - cd o1a-assessment-tool
-3. Create the virtual environment - python -m venv venv
+1. Clone the repository - `git clone https://github.com/aghakishiyeva/o1a-assessment-tool`
+2. Navigate to the directory - `cd o1a-assessment-tool`
+3. Create the virtual environment - `python -m venv venv`
 4. Activate the virtual environment <br>
-   4.1 source venv/bin/activate  # On macOS/Linux <br>
-   4.2 venv\Scripts\activate     # On Windows
-5. Install dependencies - pip install -r requirements.txt
-6. Run the app - uvicorn app.main:app --reload
-7. Try it! - http://127.0.0.1:8000
+   4.1 `source venv/bin/activate`  # On macOS/Linux <br>
+   4.2 `venv\Scripts\activate `    # On Windows
+5. Install dependencies - `pip install -r requirements.txt`
+6. Run the app - `uvicorn app.main:app --reload`
+7. Try it! - `http://127.0.0.1:8000`
