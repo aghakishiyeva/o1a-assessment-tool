@@ -6,8 +6,8 @@
     <title>O-1A Visa Assessment Tool</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <!-- Favicon (US Flag) -->
-    <link rel="icon" type="image/png" href="/static/us-flag.png?v=2"> <!-- Cache busting added -->
+    <!-- Favicon (US Flag) -->a
+    <link rel="icon" type="image/png" href="/static/us-flag.png?v=2"> <!-- Ensure this path is correct -->
     
     <style>
         /* General Styles */
@@ -144,17 +144,9 @@
             color: #333;  /* Default color for the text */
         }
 
-        /* Qualification Rating Colors */
-        .qualification-rating .rating-value.low {
-            color: #ff0000; /* Red for low */
-        }
-
-        .qualification-rating .rating-value.medium {
-            color: #ffa500; /* Orange for medium */
-        }
-
-        .qualification-rating .rating-value.high {
-            color: #28a745; /* Green for high */
+        .qualification-rating strong {
+            font-weight: 700;  /* Bold for the result */
+            color: rgb(38, 81, 51);  /* Green color for the result */
         }
 
         .criteria-list {
@@ -264,15 +256,13 @@
             try {
                 resultElement.innerHTML = "<p>Processing... Please wait.</p>";
                 resultContainer.style.display = 'block';  // Show results section
-
                 const response = await fetch('/upload/', {
                     method: 'POST',
                     body: formData,
                 });
 
                 if (!response.ok) {
-                    const errorData = await response.json();
-                    throw new Error(errorData.detail || "Failed to upload file");
+                    throw new Error(`HTTP error! Status: ${response.status}`);
                 }
 
                 const data = await response.json();
@@ -286,20 +276,10 @@
         function displayResults(data) {
             const resultElement = document.getElementById('result');
             const qualifications = data.assessment.qualifications;
-            const rating = data.assessment["O-1A Qualification Rating"].toLowerCase(); // Ensure lowercase for comparison
+            const rating = data.assessment["O-1A Qualification Rating"];
 
-            // Determine the CSS class based on the rating
-            let ratingClass = '';
-            if (rating === 'low') {
-                ratingClass = 'low';
-            } else if (rating === 'medium') {
-                ratingClass = 'medium';
-            } else if (rating === 'high') {
-                ratingClass = 'high';
-            }
-
-            // Display the qualification rating with the appropriate class for the value
-            let html = `<div class="qualification-rating">Qualification Rating: <strong><span class="rating-value ${ratingClass}">${rating}</span></strong></div>`;
+            // Display the qualification rating
+            let html = `<div class="qualification-rating">Qualification Rating: <strong>${rating}</strong></div>`;
 
             // Display each criterion
             html += `<div class="criteria-list">`;

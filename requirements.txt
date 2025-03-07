@@ -6,7 +6,7 @@ uvicorn==0.34.0
 pdfminer.six==20240706
 
 # NLP and AI-based text processing
-spacy==3.8.4
+spacy==3.4.2
 sentence-transformers==3.4.1
 nltk==3.8.1
 tf-keras==2.15.0
