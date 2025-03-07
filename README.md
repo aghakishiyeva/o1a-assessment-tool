@@ -26,7 +26,7 @@ Here is the sample video:
    - **Low**: Fewer than 3 criteria matched.
 
 4. **API Design**:
-   - Built with **FastAPI** for simplicity and performance.
+   - Built with **FastAPI** for simplicity and performance (also as requested).
    - Endpoint `/upload/` accepts a CV file and returns:
      - Achievements matching O-1A criteria.
      - Overall qualification rating.
