@@ -1,0 +1,8 @@
+1. Awards: The candidate must have received a major internationally recognized award (e.g., Nobel Prize, Turing Award, Pulitzer Prize) or smaller significant industry awards (e.g., Best Paper Award, Employee of the Year).
+2. Membership: The candidate must be a member of professional associations requiring outstanding achievements (e.g., IEEE, ACM, National Academy of Engineering).
+3. Press: The candidate should have been featured in major publications or news media (e.g., Forbes, New York Times, MIT Technology Review).
+4. Judging: The candidate has judged the work of others in their field (e.g., peer-reviewed journals, conference panels, competitions).
+5. Original Contribution: The candidate must have made original contributions in their field (e.g., patents, groundbreaking research, innovative products).
+6. Scholarly Articles: The candidate has published scientific or professional articles (e.g., in journals like Nature, Science, NeurIPS).
+7. Critical Employment: The candidate has been in a leading role in a distinguished organization (e.g., Principal Scientist at OpenAI, Research Lead at Google Brain).
+8. High Remuneration: The candidate has a salary significantly above industry standards (e.g., $500,000 annually in a field where the average is $100,000).
