@@ -6,4 +6,5 @@ This AI application assesses how qualified a person is for an O-1A immigration v
 
 Here is the sample video:
 
+[![O1A Assessment Tool](https://img.youtube.com/vi/AO8yiENGRlE/0.jpg)](https://www.youtube.com/watch?v=AO8yiENGRlE)
 
